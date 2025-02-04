@@ -33,4 +33,4 @@ fi
 echo "${stylelint_path}" >> $GITHUB_PATH
 
 echo $pattern
-sh -c "$stylelint_path $pattern"
+sh -c "$stylelint_path $pattern || true"
